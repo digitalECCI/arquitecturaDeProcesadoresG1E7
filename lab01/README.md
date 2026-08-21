@@ -2,9 +2,9 @@
 # Lab01 - Sumador/Restador de 4 bits
 
 # Integrantes
-    * [<!-- Remplace aqui nombre 1. -->](<!-- Remplace aqui link de usario 1 de github -->) 
-    * [<!-- Remplace aqui nombre 2. -->](<!-- Remplace aqui link de usario 2 de github -->) 
-    * [<!-- Remplace aqui nombre 3. -->](<!-- Remplace aqui link de usario 3 de github -->) 
+* [Sergio Luis Sandoval Briceño](https://github.com/chesan36) 
+* [Kevinn ferney Mora Moreno](https://github.com/kevinfemoramo-gif) 
+* [Kevin Steeven Blanco Montealegre](https://github.com/kevinstblancomo-gif) 
 # Informe
 
 Indice:
