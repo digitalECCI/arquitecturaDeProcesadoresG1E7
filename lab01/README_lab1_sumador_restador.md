@@ -14,7 +14,7 @@ Indice:
 3. [Evidencias de implementación](#evidencias-de-implementación)
 4. [Preguntas](#preguntas)
 5. [Conclusiones](#conclusiones)
-6. [Referencias](#referencias)
+6. [Referencias](#Referencias)
 
 ## Documentación del diseño implementado
 Este es el primer laboratorio de la materia de arquitectura de procesadores, el objetivo principal es realizar un sumador restador en el "lenguaje de programación" verilog.
