@@ -95,7 +95,7 @@ una vez escrito el codigo en visual studio code utilizabamos el comando gtkwave 
 mostando asi las entradas en sus respectivas posiciones y la respuesta de la salida a las ditintas combinaciones 
 
 #### 1.2 Diagrama
-<img width="1771" height="888" alt="ChatGPT Image 1 sept 2026, 13_28_11" src="https://github.com/user-attachments/assets/08c0c068-abb7-46c9-9002-0b76cc67d9d8" />
+<img width="1771" height="888" alt="ChatGPT Image 1 sept 2026, 13_28_11" src="https://github.com/user-attachments/assets/5511a232-d08f-4bb6-ad8e-66b54db58ae6" />
 
 ## Evidencias de implementación
 
