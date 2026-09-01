@@ -95,13 +95,13 @@ una vez escrito el codigo en visual studio code utilizabamos el comando gtkwave 
 mostando asi las entradas en sus respectivas posiciones y la respuesta de la salida a las ditintas combinaciones 
 
 #### 1.2 Diagrama
-
+<img width="1771" height="888" alt="ChatGPT Image 1 sept 2026, 13_28_11" src="https://github.com/user-attachments/assets/08c0c068-abb7-46c9-9002-0b76cc67d9d8" />
 
 ## Evidencias de implementación
 
 
 ## Conclusiones
-
+En conclusión, durante el desarrollo de esta actividad se logró implementar y comprobar el funcionamiento de un sumador/restador de 4 bits utilizando Verilog, comprendiendo cómo un circuito combinacional puede realizar ambas operaciones mediante el uso del complemento a 2. A partir del sumador completo de 1 bit se construyó una estructura de cuatro etapas conectadas mediante sus acarreos, incorporando compuertas XOR para modificar la entrada B según la señal de selección y utilizar el acarreo inicial para realizar la resta. Las simulaciones realizadas con Icarus Verilog y GTKWave permitieron verificar que las diferentes combinaciones de las entradas producen los resultados esperados, incluyendo la propagación de los acarreos. Además, la actividad permitió comprender de una manera práctica la relación entre las expresiones lógicas, las compuertas digitales y su implementación mediante código Verilog, así como identificar y corregir errores durante el proceso de desarrollo, fortaleciendo los conocimientos sobre lógica digital, circuitos aritméticos y diseño de hardware mediante HDL.
 
 ## Referencia
 guia de laboratorio 1 arquitectura de procesadores
