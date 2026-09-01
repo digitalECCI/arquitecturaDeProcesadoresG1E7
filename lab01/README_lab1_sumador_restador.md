@@ -86,6 +86,8 @@ Uno de los problemas que tuvimos, que personalmente fue el mas relevante; fue a 
 ## Simulaciones 
 
 ### 1. Simulación del sumador/restador
+<img width="1920" height="1128" alt="image" src="https://github.com/user-attachments/assets/ca0c2bae-4232-413f-9e42-20c91f91d1de" />
+<img width="1920" height="1128" alt="image" src="https://github.com/user-attachments/assets/4d7f07b3-503a-46c8-b560-9c0a9c46273e" />
 
 #### 1.1 Descripción
 Para realizar las simulaciones de cada uno de los circuitos mencionados anteriormente usamos el programa llamado icarus verilog.
