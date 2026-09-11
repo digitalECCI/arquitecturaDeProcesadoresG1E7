@@ -1,0 +1,37 @@
+`include "sumador_4b.v" 
+`timescale 1ms/1ms
+
+module sumador_4b_tb();
+
+    reg  [3:0] a_tb;   // Entradas de 4 bits
+    reg  [3:0] b_tb;
+    reg        cin_tb; // Acarreo inicial
+    wire [3:0] s_tb;   // Resultado
+    wire       cout_tb;// Acarreo final
+
+    // Instancia del sumador de 4 bits
+    sumador_4b uut(
+        .a_4b(a_tb),
+        .b_4b(b_tb),
+        .cin(cin_tb),
+        .s_4b(s_tb),
+        .cout(cout_tb)
+    );
+
+    integer i; // contador para recorrer casos
+
+    initial begin
+        // Recorremos todas las combinaciones de A, B y Cin
+        for (i = 0; i < 512; i = i + 1) begin
+            {a_tb, b_tb, cin_tb} = i;  // empaquetamos en un solo entero
+            #5;                        // esperamos 5 unidades de tiempo
+        end
+    end
+
+    initial begin: TEST_CASE
+        $dumpfile("sumador_4b_tb.vcd");
+        $dumpvars(-1, uut);
+        #3000; // tiempo suficiente para recorrer todos los casos
+    end
+
+endmodule
