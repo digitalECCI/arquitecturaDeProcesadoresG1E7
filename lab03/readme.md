@@ -51,10 +51,15 @@ La descripción HDL implementa un multiplicador secuencial de 3 bits utilizando 
 Entradas:
 
 -MD ($m$ bits / 3 bits): Multiplicando.
+
 -MR ($m$ bits / 3 bits): Multiplicador.
+
 -INIT: Señal de inicio del proceso de multiplicación.
+
 -CLK: Señal de reloj.
+
 -Salidas:PP ($2m$ bits / 6 bits): Producto Parcial (resultado final acumulado).
+
 -DONE: Señal que indica la finalización de la multiplicación.
 
 **Funcionamiento:**
