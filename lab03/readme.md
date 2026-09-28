@@ -22,12 +22,12 @@ Dicha multiplicación se hara con productos parciales y desplazamientos, entendi
 
 
 **Funcionamiento:**
-Multiplicación secuencial
+**Multiplicación secuencial**
 En la multiplicación secuencial, los operandos se procesan bit a bit a lo largo de varios ciclos de reloj. A cada ciclo se realiza una operación parcial (suma o desplazamiento), acumulando el resultado hasta obtener el producto final.
 
 El módulo diseñado multiplica dos operandos de 3 bits (Multiplicando: MD, Multiplicador: MR). El resultado se acumula en un registro de productos parciales (pp) de 6 bits. Una señal de control (done) indica cuándo la operación ha finalizado.
 
-Máquina de Estados Algorítmica (ASM)
+**Máquina de Estados Algorítmica (ASM)**
 Una Máquina de Estados Algorítmica (ASM) es un modelo de computación secuencial en el que el sistema puede encontrarse en un estado a la vez y cambia de estado en respuesta a una entrada o evento, típicamente sincronizado con un reloj.
 
 En este diseño, la ASM se encarga de coordinar:
@@ -42,7 +42,8 @@ En este diseño, la ASM se encarga de coordinar:
 
 Este enfoque ordenado facilita el diseño modular y el control explícito de cada etapa del algoritmo.
 
-Descripción del multiplicador secuencial y su funcionamientoLa descripción HDL implementa un multiplicador secuencial de 3 bits utilizando una máquina de estados algorítmica (ASM) para controlar el proceso de multiplicación basado en el algoritmo de productos parciales.Interfaz del módulo:
+**Descripción del multiplicador secuencial y su funcionamiento**
+La descripción HDL implementa un multiplicador secuencial de 3 bits utilizando una máquina de estados algorítmica (ASM) para controlar el proceso de multiplicación basado en el algoritmo de productos parciales.Interfaz del módulo:
 Entradas:
 -MD ($m$ bits / 3 bits): Multiplicando.
 -MR ($m$ bits / 3 bits): Multiplicador.
@@ -51,7 +52,8 @@ Entradas:
 -Salidas:PP ($2m$ bits / 6 bits): Producto Parcial (resultado final acumulado).
 -DONE: Señal que indica la finalización de la multiplicación.
 
-Funcionamiento:El módulo multiplicador realiza la multiplicación de dos números de 3 bits cada uno (MR y MD) de forma secuencial, donde los productos parciales se suman y desplazan a lo largo de varios ciclos de reloj a partir de cierta condición; al cargar los valores a las entradas A y B un condicional pregunta si el bit menos significativo de la entrada B es 0, si es así él va a realizar un corrimiento de un bit a la izquierda en A y un bit a la derecha en B, Si el bit menos significativo de B es 1 realizara una suma del pp con A para luego hacer el corrimiento indicado anteriormente. Después de esto el algoritmo nos muestra otro condicional el cual nos pregunta si B es total a 0 si es así el resultado final se almacena en pp (producto parcial de 6 bits) y la señal done indica que la multiplicación finalizó si no es así vuelve a hacer las iteraciones necesarias hasta cumplir con la condición.
+**Funcionamiento:**
+El módulo multiplicador realiza la multiplicación de dos números de 3 bits cada uno (MR y MD) de forma secuencial, donde los productos parciales se suman y desplazan a lo largo de varios ciclos de reloj a partir de cierta condición; al cargar los valores a las entradas A y B un condicional pregunta si el bit menos significativo de la entrada B es 0, si es así él va a realizar un corrimiento de un bit a la izquierda en A y un bit a la derecha en B, Si el bit menos significativo de B es 1 realizara una suma del pp con A para luego hacer el corrimiento indicado anteriormente. Después de esto el algoritmo nos muestra otro condicional el cual nos pregunta si B es total a 0 si es así el resultado final se almacena en pp (producto parcial de 6 bits) y la señal done indica que la multiplicación finalizó si no es así vuelve a hacer las iteraciones necesarias hasta cumplir con la condición.
 La multiplicación secuencial implica que el módulo procesa los bits de los operandos uno a uno, acumulando los productos parciales y desplazándolos hasta obtener el resultado final. Cada ciclo de reloj corresponde a una operación específica, como sumar un producto parcial o desplazar los registros involucrados.
 #### 1.2 Diagramas
 <img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/23288c9d-ced4-4284-b6d1-c6846eec662e" /> Bloque del multiplicador instanciado con el multiplexor y el double dabble para su muestra en display 7 segmentos.
