@@ -70,14 +70,19 @@ La multiplicación secuencial implica que el módulo procesa los bits de los ope
 
 #### 1.2 Diagramas
 <img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/23288c9d-ced4-4284-b6d1-c6846eec662e" />
+
 Bloque del multiplicador instanciado con el multiplexor y el double dabble para su muestra en display 7 segmentos.
 <img width="1613" height="420" alt="image" src="https://github.com/user-attachments/assets/c774599e-7a20-4a6b-a0be-8988bf692ee0" />
+
 Modulo del multiplicador.
 <img width="1215" height="620" alt="image" src="https://github.com/user-attachments/assets/e8c01552-e1e7-47d0-bd31-179be4ad2d67" />
+
 Maquina de estados (FMS).
 <img width="625" height="523" alt="image" src="https://github.com/user-attachments/assets/cc20cbbf-9d89-42c9-860a-6083967631b5" />
+
 Diagrama de flujo Multiplicador.
 <img width="626" height="567" alt="image" src="https://github.com/user-attachments/assets/a56e03af-452b-4c19-8303-483da69c2e39" /> 
+
 Maquina de estados como unidad de control.
 
 
