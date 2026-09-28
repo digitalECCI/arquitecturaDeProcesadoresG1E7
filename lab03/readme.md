@@ -100,7 +100,7 @@ Transición: Si $Z = 0$, vuelve a CHECK. Si $Z = 1$, pasa a END.
 
 Salidas de control: DONE = 1, RESET = 0, SH = 0, ADD = 0.
 
-Transición: Regresa a START si está en estado END y Init es 1.
+Transición: Regresa a START si está en estado END y INIT = 1.
 
 #### 1.2 Diagramas
 <img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/23288c9d-ced4-4284-b6d1-c6846eec662e" />
