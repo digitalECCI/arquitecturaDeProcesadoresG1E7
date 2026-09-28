@@ -22,8 +22,23 @@ Dicha multiplicación se hara con productos parciales y desplazamientos, entendi
 
 
 **Funcionamiento:**
+Multiplicación secuencial
+En la multiplicación secuencial, los operandos se procesan bit a bit a lo largo de varios ciclos de reloj. A cada ciclo se realiza una operación parcial (suma o desplazamiento), acumulando el resultado hasta obtener el producto final.
+El módulo diseñado multiplica dos operandos de 3 bits (Multiplicando: MD, Multiplicador: MR). El resultado se acumula en un registro de productos parciales (pp) de 6 bits. Una señal de control (done) indica cuándo la operación ha finalizado.
+Máquina de Estados Algorítmica (ASM)
+Una Máquina de Estados Algorítmica (ASM) es un modelo de computación secuencial en el que el sistema puede encontrarse en un estado a la vez y cambia de estado en respuesta a una entrada o evento, típicamente sincronizado con un reloj.
 
+En este diseño, la ASM se encarga de coordinar:
 
+La carga de operandos.
+
+La generación de productos parciales.
+
+El desplazamiento y acumulación del resultado.
+
+La finalización del proceso de multiplicación.
+
+Este enfoque ordenado facilita el diseño modular y el control explícito de cada etapa del algoritmo.
 #### 1.2 Diagramas
 
 
