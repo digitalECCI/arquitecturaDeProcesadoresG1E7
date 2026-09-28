@@ -68,6 +68,40 @@ El módulo multiplicador realiza la multiplicación de dos números de 3 bits ca
 
 La multiplicación secuencial implica que el módulo procesa los bits de los operandos uno a uno, acumulando los productos parciales y desplazándolos hasta obtener el resultado final. Cada ciclo de reloj corresponde a una operación específica, como sumar un producto parcial o desplazar los registros involucrados.
 
+**Unidad de Control del Bloque Multiplicador (Máquina de Estados)**
+
+La máquina de estados cuenta con 5 estados:
+
+**START:**
+
+Salidas de control: DONE = 0, RESET = 1, SH = 0, ADD = 0.
+
+Transición: Permanecer en START mientras INIT = 0. Si INIT = 1, pasa a CHECK.
+
+**CHECK:**
+
+Salidas de control: DONE = 0, RESET = 0, SH = 0, ADD = 0.
+
+Transición: Si $LSB\_B = 1$, pasa a ADD. Si $LSB\_B = 0$, pasa a SHIFT.
+
+**ADD:**
+
+Salidas de control: DONE = 0, RESET = 0, SH = 0, ADD = 1.
+
+Transición: Pasa directamente a SHIFT.
+
+**SHIFT:**
+
+Salidas de control: DONE = 0, RESET = 0, SH = 1, ADD = 0.
+
+Transición: Si $Z = 0$, vuelve a CHECK. Si $Z = 1$, pasa a END.
+
+**END:**
+
+Salidas de control: DONE = 1, RESET = 0, SH = 0, ADD = 0.
+
+Transición: Regresa a START si está en estado END y Init es 1.
+
 #### 1.2 Diagramas
 <img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/23288c9d-ced4-4284-b6d1-c6846eec662e" />
 
