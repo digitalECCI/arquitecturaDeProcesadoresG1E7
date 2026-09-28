@@ -17,6 +17,8 @@ Indice:
 6. [Referencias](#Referencias)
 
 ## Documentación del diseño implementado
+En este laboratorio nuestra misión es contruir una maquina de estados para realizar la multiplicación de dos entradas de 3 bits cada una usando una logica secuencial.
+Dicha multiplicación se hara con productos parciales y desplazamientos, entendido el funcionamiento de esta logica sintetizaremos la maquina de estados en lenguaje HDL verilog e implementaremos en la fpga.
 
 
 **Funcionamiento:**
