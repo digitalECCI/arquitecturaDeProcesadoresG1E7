@@ -1,0 +1,11 @@
+tb_top.v
+top_system.v
+uart_fmt.v
+ALU.v
+banco_registro.v
+uart_tx.v
+sumador_restador_4b.v
+multiplicador_fsm.v
+parcial.v
+comparador_1b.v
+sumador_1b.v

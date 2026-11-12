@@ -1,0 +1,27 @@
+set_location_assignment PIN_P11 -to clk
+set_location_assignment PIN_B8  -to KEY[0]
+set_location_assignment PIN_A7  -to KEY[1]
+set_location_assignment PIN_A8  -to LEDR[0]
+set_location_assignment PIN_A9  -to LEDR[1]
+set_location_assignment PIN_A10 -to LEDR[2]
+
+set_location_assignment PIN_C10 -to ext_A[0]
+set_location_assignment PIN_C11 -to ext_A[1]
+set_location_assignment PIN_D12 -to ext_A[2]
+set_location_assignment PIN_C12 -to ext_A[3]
+set_location_assignment PIN_A12 -to ext_B[0]
+set_location_assignment PIN_B12 -to ext_B[1]
+set_location_assignment PIN_A13 -to ext_B[2]
+set_location_assignment PIN_A14 -to ext_B[3]
+set_location_assignment PIN_B14 -to ext_write_en
+set_location_assignment PIN_F15 -to ext_read_en
+
+set_location_assignment PIN_V10 -to tx
+set_location_assignment PIN_W10 -to ext_selop[0]
+set_location_assignment PIN_V9  -to ext_selop[1]
+set_location_assignment PIN_W9  -to ext_selop[2]
+set_location_assignment PIN_V8  -to ext_addr[0]
+set_location_assignment PIN_W8  -to ext_addr[1]
+set_location_assignment PIN_V7  -to ext_addr[2]
+
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to *
