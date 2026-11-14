@@ -1,0 +1,20 @@
+t=110000  FETCH  PC=0  instr=8205
+t=170000  WRITE  R1 <= 5
+t=190000  FETCH  PC=1  instr=8403
+t=250000  WRITE  R2 <= 3
+t=270000  FETCH  PC=2  instr=0650
+t=330000  WRITE  R3 <= 8
+t=350000  FETCH  PC=3  instr=28c8
+t=590000  WRITE  R4 <= 40
+t=610000  FETCH  PC=4  instr=a100
+t=650000  OUT    R4 = 40
+[OK]    UART -> "4:040"
+t=70970000  FETCH  PC=5  instr=f000
+t=71090000  HALT
+[OK]    R1 = 5
+[OK]    R2 = 3
+[OK]    R3 = 8
+[OK]    R4 = 40
+[OK]    LEDR[7:0] = 40
+TOTAL ERRORES: 0
+tb_top.v:107: $finish called at 71090000 (1ps)
