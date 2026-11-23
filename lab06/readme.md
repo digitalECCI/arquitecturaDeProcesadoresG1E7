@@ -175,3 +175,4 @@ Además, la implementación de la consola interactiva por UART a 115200 baudios 
 [2] YosysHQ, "PicoRV32 - A Size-Optimized RISC-V CPU," Repositorio GitHub. Disponible en: https://github.com/YosysHQ/picorv32
 
 [3] Digital-ECCI, "picoSoC_simple," Repositorio GitHub. Disponible en: https://github.com/digital-ECCI/picoSoC_simple
+[4] Google, "Gemini," asistente de inteligencia artificial (asistencia en formato Markdown), 2026. Disponible en: https://gemini.google.com
